@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:my_compass/providers/permission_provider.dart';
 import 'package:my_compass/views/main_view.dart';
 import 'package:provider/provider.dart';
-import 'models/my_compass.dart';
+import 'view_models/my_compass_provider.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  MyCompass().init();
   runApp(MultiProvider(providers: [
     ChangeNotifierProvider(create: (_) => AppPermissionProvider()),
+    ChangeNotifierProvider(create: (_) => MyCompassProvider()),
   ], child: const MyApp()));
 
 }
