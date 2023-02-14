@@ -4,9 +4,6 @@ import 'package:my_compass/models/my_compass.dart';
 
 class CompassView extends StatelessWidget {
   const CompassView ({Key? key}) : super(key: key);
-  // CompassEvent? _lastRead;
-  //
-  // DateTime? _lastReadAt;
 
   @override
   Widget build(BuildContext context) {

@@ -31,5 +31,9 @@ class AppPermissionProvider with ChangeNotifier{
     notifyListeners();
   }
 
+  Future<bool> openSettings() async{
+    return await permission.openSettings();
+  }
+
 
 }

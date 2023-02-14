@@ -16,6 +16,11 @@ class AppPermission{
     return (status == PermissionStatus.granted);
   }
 
+  // Open system settings
+  Future<bool> openSettings() async{
+    return await openAppSettings();
+  }
+
   // Storage permission
 
   // Camera permission

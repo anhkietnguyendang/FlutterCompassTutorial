@@ -10,6 +10,7 @@ void main() {
   runApp(MultiProvider(providers: [
     ChangeNotifierProvider(create: (_) => AppPermissionProvider()),
   ], child: const MyApp()));
+
 }
 
 class MyApp extends StatelessWidget {

@@ -31,6 +31,8 @@ class PermissionSheet extends StatelessWidget {
   }
 
   void openAppSettings(){
-    openAppSettings();
+    var permissions = AppPermissionProvider();
+    permissions.openSettings();
   }
+
 }
